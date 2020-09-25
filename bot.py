@@ -237,5 +237,4 @@ if __name__ == '__main__':
     time.sleep(2)
     bot.get_following()
     #bot = bot('username', 'password')
-    #bot.follow_user("jared9anderson")
     #bot.user_follow_action("masuee.art", True)
