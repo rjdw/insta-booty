@@ -232,7 +232,7 @@ class bot:
 ###TESTING
 if __name__ == '__main__':
     parser = configparser.ConfigParser()
-    parser.read("./config.ini")
+    parser.read("./../config.ini")
     bot = bot(parser["Default"]["username"], parser["Default"]["password"])
     time.sleep(2)
     bot.get_following()
