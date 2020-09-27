@@ -11,7 +11,8 @@ class bot_creator:
     def __init__(self):
         print("init")
         # self.driver = webdriver.Chrome("./chromedriver")
-        # self.url = "https://www.instagram.com/accounts/emailsignup/"
+        # self.insta = "https://www.instagram.com/accounts/emailsignup/"
+        # self.gmail = "https://accounts.google.com/signup"
 
 
 
@@ -33,6 +34,8 @@ class bot_creator:
 
     """
     makes a password according to gmail and instagram requirements
+    for secure password would use secrets module
+    this is very basic, don't care too much about the passwords
     Instagram: combination of six or more letters, numbers and punctuation marks
     Gmail: Must be a minimum of 8 characters.
             Require a number in the password.
@@ -43,10 +46,20 @@ class bot_creator:
     returns string
     """
     def _create_password(self):
+        res = "!@"
+        for i in range(4):
+            res += chr(randrange(65,91))
+            res += chr(randrange(97,123))
+            res += chr(randrange(48,58))
+
+        return res
 
 
-
-
+    """
+    closes the brower
+    """
+    def close(self):
+        self.driver.close()
 
 
 if __name__ == '__main__':

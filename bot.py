@@ -223,6 +223,11 @@ class bot:
         return map
 
 
+    """
+    Exits the browser
+    """
+    def close(self):
+        self.driver.close()
 
 
 
@@ -236,5 +241,6 @@ if __name__ == '__main__':
     bot = bot(parser["Default"]["username"], parser["Default"]["password"])
     time.sleep(2)
     bot.get_following()
+    bot.close()
     #bot = bot('username', 'password')
     #bot.user_follow_action("masuee.art", True)
