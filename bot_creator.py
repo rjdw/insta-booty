@@ -24,7 +24,7 @@ class bot_creator:
         first = randrange(1001)
         firstname = [line for i, line in enumerate(open("./util/firstname.txt")) if i == first][0].strip().lower()
         last = randrange(1001)
-        lastname = [line for i, line in enumerate(open("./util/firstname.txt")) if i == last][0].strip().lower()
+        lastname = [line for i, line in enumerate(open("./util/lastname.txt")) if i == last][0].strip().lower()
 
         number = ""
         for i in range(5):
