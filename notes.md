@@ -82,3 +82,7 @@ get_followers in bot.py might not work for users with a large amount of follower
 might run the creation bot through tor or some vpn, look for something with a good api   
 mb have to change language and browser, can run tor on chrome from extension though    
 not too sure about running selenium on the tor browser itself
+
+# 09/28/20
+
+most likely using tor browser for gmail creation
