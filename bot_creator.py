@@ -3,8 +3,10 @@ import os, time
 import configparser
 from random import randrange
 
-#creates new bot accounts
-#stores username and password in config.ini
+"""
+creates new bot accounts
+stores username and password in config.ini
+"""
 class bot_creator:
 
     #__init__
